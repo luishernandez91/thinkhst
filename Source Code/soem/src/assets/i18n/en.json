@@ -1,0 +1,13 @@
+{
+  "EMAIL": "Email address",
+  "PASSWORD": "Password",
+  "LOGIN": {
+    "BUTTON": "Login",
+    "SUCCESS": "Welcome {{name}}",
+    "ERROR": "Invalid credentials"
+  },
+  "VALIDATORS": {
+    "EMAIL": "Enter a valid email",
+    "PASSWORD": "Password is required"
+  }
+}

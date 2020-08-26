@@ -1,0 +1,13 @@
+{
+  "EMAIL": "Correo electrónico",
+  "PASSWORD": "Contraseña",
+  "LOGIN": {
+    "BUTTON": "Ingresar",
+    "SUCCESS": "Bienvenid@ {{name}}",
+    "ERROR": "Credenciales inválidas"
+  },
+  "VALIDATORS": {
+    "EMAIL": "Ingresa un correo electrónico válido",
+    "PASSWORD": "Ingresa tu contraseña"
+  }
+}

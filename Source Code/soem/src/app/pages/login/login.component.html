@@ -1,0 +1,51 @@
+<section class="login-wrapper">
+  <div class="lang">
+    <a class="langitem" (click)="changeLanguage('es')">ESP</a>
+    <div class="separator"></div>
+    <a class="langitem" (click)="changeLanguage('en')">ENG</a>
+  </div>
+  <form class="form centered-item" [formGroup]="form">
+
+    <div *ngIf="showLoginMessage"
+         [ngClass]="loginStatus ? 'alert-primary': 'alert-danger'"
+         class="alert" role="alert">
+      {{loginStatus ? ("LOGIN.SUCCESS" | translate:user | uppercase) : ("LOGIN.ERROR" | translate)}}
+    </div>
+
+    <img src="./assets/img/logo.png" alt="Logo" class="brand">
+    <div class="form-group">
+      <label for="email">{{"EMAIL" | translate}}</label>
+      <input type="text"
+             class="form-control"
+             id="email"
+             formControlName="email"
+             [ngClass]="{
+             'is-invalid': form.get('email').invalid && form.get('email').touched,
+             'is-valid':  form.get('email').valid && form.get('email').touched
+             }"
+      >
+      <div class="invalid-feedback">
+        {{"VALIDATORS.EMAIL" | translate}}
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="password">{{"PASSWORD" | translate}}</label>
+      <input type="password"
+             class="form-control"
+             id="password"
+             formControlName="password"
+             [ngClass]="{
+             'is-invalid': form.get('password').invalid && form.get('password').touched,
+             'is-valid':  form.get('password').valid && form.get('password').touched
+             }"
+      >
+      <div class="invalid-feedback">
+        {{"VALIDATORS.PASSWORD" | translate}}
+      </div>
+    </div>
+    <button type="submit" class="btn btn-block btn-primary"
+            (click)="form.valid && onSubmitCredentials()"
+            [ngClass]="{disabled: form.invalid}">{{"LOGIN.BUTTON" | translate}}
+    </button>
+  </form>
+</section>

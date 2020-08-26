@@ -1,0 +1,64 @@
+# See http://help.github.com/ignore-files/ for more about ignoring files.
+
+# compiled output
+/soem/dist
+/server/dist
+/soem/tmp
+/server/tmp
+/soem/out-tsc
+/server/out-tsc
+# Only exists if Bazel was run
+/soem/bazel-out
+/server/bazel-out
+
+# dependencies
+/soem/node_modules
+/server/node_modules
+
+# profiling files
+/soem/chrome-profiler-events*.json
+/server/chrome-profiler-events*.json
+/soem/speed-measure-plugin*.json
+/server/speed-measure-plugin*.json
+
+# IDEs and editors
+/soem/.idea
+/server/.idea
+/soem/.project
+/server/.project
+/soem/.classpath
+/server/.classpath
+/soem/.c9/
+/server/.c9/
+/soem/*.launch
+/server/*.launch
+/soem/.settings/
+/server/.settings/
+/soem/*.sublime-workspace
+/server/*.sublime-workspace
+
+# misc
+/soem/.sass-cache
+/server/.sass-cache
+/soem/connect.lock
+/server/connect.lock
+/soem/coverage
+/server/coverage
+/soem/libpeerconnection.log
+/server/libpeerconnection.log
+/soem/npm-debug.log
+/server/npm-debug.log
+/soem/yarn-error.log
+/server/yarn-error.log
+/soem/testem.log
+/server/testem.log
+/soem/typings
+/server/typings
+
+# System Files
+/.DS_Store
+/.idea
+/soem/.DS_Store
+/server/.DS_Store
+/soem/Thumbs.db
+/server/Thumbs.db
