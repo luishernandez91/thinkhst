@@ -55,7 +55,8 @@ app.use(express.json());
 //==============================================
 // Routes implementation
 //==============================================
-app.use('/login', require('./routes/login'));
+app.use('/login', require('./routes/login.route'));
+app.use('/user', require('./routes/user.route'));
 
 //==============================================
 // Setting up server
